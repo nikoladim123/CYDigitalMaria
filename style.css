@@ -107,7 +107,7 @@ h1{
 
 .number{
   color:white;
-  margin-right: 1.92vw;
+  margin-right: 1.32vw;
   width: 12.07vw;
 }
 
@@ -203,6 +203,7 @@ h1{
 }
 
 .buttonsBox{
+  position: relative;
   font-family: 'Montserrat-Semi-Bold';
   display: flex;
   padding-left: 10vw;
@@ -217,6 +218,28 @@ h1{
   width: 18.74vw;
   height: 5.26vw;
   font-size: 1.69vw;
+}
+
+.animaLine{
+  position: absolute;
+  opacity: 0.7;
+  top:-5vw;
+  left: 51vw;
+  width: 1px;
+  background: white;
+  height: 12.67vw;
+  animation-name: animaLine;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animaLine {
+  0%{
+    height: 1vw;
+  }
+  100%{
+    height: 12.67vw;
+  }
 }
 
 .FindoutNowBox{
