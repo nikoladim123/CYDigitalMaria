@@ -111,6 +111,10 @@ h1{
   height: 6.19vw;
 }
 
+.burgerMenu:hover{
+  cursor: pointer;
+}
+
 .burgerMenu div{
   background-color: rgb(239,106,70);
   height: 3.125%;
