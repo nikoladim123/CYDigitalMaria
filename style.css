@@ -18,6 +18,11 @@
   src: url('fonts/Montserrat-Bold.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('fonts/Montserrat-Light.otf') format('truetype');
+}
+
 body{
   margin: 0;
 }
@@ -39,7 +44,7 @@ header{
 .blackFilter{
   background-color: black;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -51,8 +56,8 @@ header{
 
 .powerDigital{
   display: flex;
-  margin-left: 7.11vw;
-  width: 54.66vw;
+  margin-left: 5.7vw;
+  width: 54vw;
 }
 
 h1{
@@ -74,7 +79,7 @@ h1{
 .icons{
   display: flex;
   align-items: center;
-  margin-right: 6.96vw;
+  margin-right: 5.63vw;
 }
 
 .shareIcon{
@@ -82,7 +87,11 @@ h1{
   background-size: 100% 100%;
   width: 1.92vw;
   height: 1.4vw;
-  margin-right: 2.81vw;
+  margin-right: 4.67vw;
+}
+
+.shareIcon:hover{
+  cursor: pointer;
 }
 
 .searchIcon{
@@ -90,6 +99,10 @@ h1{
   background-size: 100% 100%;
   width: 1.5vw;
   height: 1.5vw;
+}
+
+.searchIcon:hover{
+  cursor: pointer;
 }
 
 .number{
@@ -107,6 +120,7 @@ h1{
 
 .burgerMenu{
   background-color: white;
+  /* border:1px solid rgb(239,106,70); */
   width: 7.11vw;
   height: 6.19vw;
 }
@@ -141,29 +155,34 @@ h1{
 .oneThingBox{
   padding-left: 10vw;
   color:white;
-  margin-top: 3.70vw;
+  margin-top: 1.9vw;
 }
 
 .oneThingBox p{
   margin: 0;
-  font-size: 2.674vw;
+  font-size: 2.314vw;
   font-family: 'Montserrat-Thin';
 }
 
 .oneThingBox p:nth-child(2){
   font-family: 'Montserrat-Black';
-  font-size: 8.25vw;
+  font-size: 6.25vw;
   font-weight: 800;
-  margin-bottom: -0.65vw;
+  margin-bottom: -0.1vw;
 }
 
 .oneThingBox p:nth-child(3){
-  font-size: 4vw;
+  font-size: 2.2vw;
+}
+
+.oneThingBox p:nth-child(4){
+  font-family: 'Montserrat-Light';
+  font-size: 3.5vw;
 }
 
 .reachAudienceBox{
   padding-left: 10vw;
-  margin-top: 2.1vw;
+  margin-top: 4.5vw;
 }
 
 .reachAudienceBox a{
@@ -171,6 +190,7 @@ h1{
   font-size: 1.7vw;
   text-decoration: none;
   color: rgb(243,110,92);
+  transition: 0.3s;
 }
 .reachAudienceBox p{
   margin: 0;
@@ -179,6 +199,7 @@ h1{
 
 .reachAudienceBox a:hover{
   color:rgb(239,106,70);
+  font-size: 1.72vw;
 }
 
 .buttonsBox{
@@ -189,12 +210,12 @@ h1{
 
 .buttonFindOutHow{
   font-family: 'Montserrat-Bold';
-  margin-top: 2.51vw;
+  margin-top: 0.71vw;
   background-color: rgb(243,110,92);
   color:white;
   border: none;
   width: 18.74vw;
-  height: 3.777vw;
+  height: 5.26vw;
   font-size: 1.69vw;
 }
 
@@ -203,7 +224,7 @@ h1{
   margin-left: 23.11vw;
   width: 43.85vw;
   height: 4.22vw;
-  margin-top: 2.19vw;
+  margin-top: 1.6vw;
   display: flex;
   background-color: black;
 }
