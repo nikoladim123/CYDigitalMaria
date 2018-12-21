@@ -116,7 +116,6 @@ header{
   border-radius: 3px;
 }
 .inputBox{
-  border: 1px solid red;
   padding: 5px;
   display: flex;
   height: 5vw;
