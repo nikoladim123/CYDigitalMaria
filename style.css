@@ -1,20 +1,48 @@
-body{
-  margin: 0;
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('fonts/Montserrat-Thin.otf') format('truetype');
 }
-html{
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('fonts/Montserrat-Black.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Semi-Bold';
+  src: url('fonts/Montserrat-SemiBold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('fonts/Montserrat-Bold.otf') format('truetype');
+}
+
+body{
   margin: 0;
 }
 
 header{
+  position:relative;
   width: 100%;
+  height: 100vh;
 }
 
 #myVideo{
-  z-index: -1;
+  z-index: -2;
   object-fit: cover;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.blackFilter{
+  background-color: black;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 .topNavBarBox{
@@ -28,7 +56,8 @@ header{
 }
 
 h1{
-  font-size: 1.55vw;
+  font-family: 'Montserrat-Semi-Bold';
+  font-size: 1.46vw;
   color: rgb(243,110,92);
   margin-top: 1.98vw;
 }
@@ -70,9 +99,10 @@ h1{
 }
 
 .number p{
+  font-family: 'Montserrat-Bold';
   margin-top: 2.34vw;
   margin-bottom: 0;
-  font-size: 1.8vw;
+  font-size: 1.78vw;
 }
 
 .burgerMenu{
@@ -112,17 +142,19 @@ h1{
 
 .oneThingBox p{
   margin: 0;
-  font-size: 2.774vw;
+  font-size: 2.674vw;
+  font-family: 'Montserrat-Thin';
 }
 
 .oneThingBox p:nth-child(2){
-  font-size: 8.6vw;
+  font-family: 'Montserrat-Black';
+  font-size: 8.25vw;
   font-weight: 800;
   margin-bottom: -0.65vw;
 }
 
 .oneThingBox p:nth-child(3){
-  font-size: 4.5vw;
+  font-size: 4vw;
 }
 
 .reachAudienceBox{
@@ -131,7 +163,8 @@ h1{
 }
 
 .reachAudienceBox a{
-  font-size: 1.77vw;
+  font-family: 'Montserrat-Black';
+  font-size: 1.7vw;
   text-decoration: none;
   color: rgb(243,110,92);
 }
@@ -145,19 +178,20 @@ h1{
 }
 
 .buttonsBox{
+  font-family: 'Montserrat-Semi-Bold';
   display: flex;
-  border: 1px solid green;
   padding-left: 10vw;
 }
 
 .buttonFindOutHow{
+  font-family: 'Montserrat-Bold';
   margin-top: 2.51vw;
   background-color: rgb(243,110,92);
   color:white;
   border: none;
   width: 18.74vw;
   height: 3.777vw;
-  font-size: 1.92vw;
+  font-size: 1.69vw;
 }
 
 .FindoutNowBox{
@@ -175,10 +209,11 @@ h1{
   width: 64.8%;
   color: white;
   align-self: center;
-  font-size: 1.62vw;
+  font-size: 1.27vw;
 }
 
 .FindoutNowBox button{
+  font-family: 'Montserrat-Bold';
   border: none;
   color:white;
   background-color: rgb(243,110,92);
@@ -187,8 +222,10 @@ h1{
 }
 
 .blackLineBox{
-  z-index: 5;
+  position: relative;
+  width: 100%;
+  z-index: 1;
   background: black;
   height: 10.66vw;
-  margin-top: 2.74vw;
+  margin-top: 0;/*-5vw*/
 }
