@@ -227,7 +227,7 @@ h1{
 
 .burgerMenu div{
   background-color: rgb(239,106,70);
-  height: 3.125%;
+  height: 3px;/*3.125%*/
 }
 
 .burgerMenu div:nth-child(1){
