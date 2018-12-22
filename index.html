@@ -12,7 +12,7 @@
   <body>
     <header>
       <video autoplay muted loop id="myVideo">
-        <source src="Video/Communication.mp4" type="video/mp4">
+        <source id='video' src="" type="video/mp4" >
       </video>
       <div class="blackFilter"></div>
       <div class="SearchDivLayer">
@@ -68,8 +68,12 @@
       <div class="blackLineBox"></div>
     </main>
 
-    <script type="text/javascript" src="app.js">
-
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+          document.getElementById('video').src = 'Video/Communication.mp4';
+          document.getElementById('myVideo').load();
+          };
     </script>
   </body>
 </html>
